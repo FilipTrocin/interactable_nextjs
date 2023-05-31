@@ -1,4 +1,8 @@
 :root {
+  --blue2: #2272FF;
+  --orange: #FF5F1F;
+  --grey: #ACADAF;
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -103,5 +107,24 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* ############## */
+/* MOBILE SUPPORT */
+/* ############## */
+
+
+@media screen and (max-width: 765px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
   }
 }
