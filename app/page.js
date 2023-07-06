@@ -16,6 +16,13 @@ import padIcon from '@/public/images/icons/pad-icon.png';
 import knowledgeIcon from '@/public/images/icons/knowledge-icon.png';
 import factoryIcon from '@/public/images/icons/factory-icon.png';
 
+import decisionTree from '@/public/images/decisiontree-img.png';
+import knnImg from '@/public/images/knn-img.png';
+import stayTuned from '@/public/images/stay-tuned.png';
+
+// Components
+import Card from "@/components/Card";
+
 
 export default function Home() {
     // TODO: Fix AOS
@@ -102,16 +109,16 @@ export default function Home() {
               </div>
               <div className={styles.notebooks}>
                   <div data-aos="flip-up" data-aos-duration="600" data-aos-offset="200">
-          {/*            <Card title={"K-Nearest Neighbours"} link="/article/k_nearest_neighbours" img='/images/knn-img.png'/>*/}
+                      <Card title={"K-Nearest Neighbours"} link="/article/k_nearest_neighbours" img={knnImg}/>
                   </div>
                   <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="600" data-aos-offset="200">
-          {/*            <Card title={"Decision Trees"} link="/article/decision_trees" img={decisionTree}/>*/}
+                      <Card title={"Decision Trees"} link="/article/decision_trees" img={decisionTree}/>
                   </div>
                   <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="600" data-aos-offset="200">
-          {/*          <Card hoverCard="inactive" title={"Random Forrest"} img={stayTuned}/>*/}
+                    <Card hoverCard="inactive" title={"Random Forrest"} img={stayTuned}/>
                   </div>
                   <div data-aos="flip-up" data-aos-delay="300" data-aos-duration="600" data-aos-offset="200">
-          {/*            <Card hoverCard="inactive" title={"Bayes Theorem"} img={stayTuned}/>*/}
+                      <Card hoverCard="inactive" title={"Bayes Theorem"} img={stayTuned}/>
                   </div>
               </div>
           </div>
