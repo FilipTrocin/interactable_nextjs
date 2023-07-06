@@ -5,6 +5,7 @@ import Image from "next/image";
 import cardStyles from '@/components/card.module.css'
 
 // Fonts
+// TODO: Find out if there's no better way i.e. choose font from css
 import {Koulen} from "next/font/google";
 const koulen = Koulen({ weight: '400', subsets: ['latin']})
 
