@@ -115,10 +115,10 @@ export default function Home() {
                       <Card title={"Decision Trees"} link="/article/decision_trees" img={decisionTree}/>
                   </div>
                   <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="600" data-aos-offset="200">
-                    <Card hoverCard="inactive" title={"Random Forrest"} img={stayTuned}/>
+                      <Card hoverCard={"inactive"} title={"Random Forrest"} img={stayTuned}/>
                   </div>
                   <div data-aos="flip-up" data-aos-delay="300" data-aos-duration="600" data-aos-offset="200">
-                      <Card hoverCard="inactive" title={"Bayes Theorem"} img={stayTuned}/>
+                      <Card hoverCard={"inactive"} title={"Bayes Theorem"} img={stayTuned}/>
                   </div>
               </div>
           </div>
