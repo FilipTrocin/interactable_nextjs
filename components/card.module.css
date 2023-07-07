@@ -13,7 +13,8 @@
 }
 
 .bg .inactive {
-  background-color: var(--grey) !important;
+  background-color: var(--grey);
+  pointer-events: none;
 }
 
 .bg p {
@@ -26,7 +27,7 @@
   margin-bottom: 0.5rem;
 }
 
-a:not(.inactive):hover {
+.bg:hover {
   background-color: var(--orange);
 }
 

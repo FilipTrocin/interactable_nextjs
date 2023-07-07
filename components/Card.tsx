@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import Image from "next/image";
 
 // CSS
-import cardStyles from '@/components/card.module.css'
+import cardStyles from '@/components/card.module.css';
 
 // Fonts
 // TODO: Find out if there's no better way i.e. choose font from css
@@ -11,16 +11,18 @@ const koulen = Koulen({ weight: '400', subsets: ['latin']})
 
 
 export default function Card(props) {
+    const inactive = props.hoverCard === "inactive" ? cardStyles.inactive : "";
+
     return (
         <a className={cardStyles.bg} href={props.link} >
-            <a className={props.hoverCard}>
-                <div className={cardStyles.content}>
-                    <p className={koulen.className}>{props.title}</p>
-                    <div className={cardStyles.insideBg}>
-                        <Image src={props.img} width={281} height={315} alt={props.alt}/>
-                    </div>
-                </div>
-            </a>
+             <div className={inactive} >
+                 <div className={cardStyles.content}>
+                     <p className={koulen.className}>{props.title}</p>
+                     <div className={cardStyles.insideBg}>
+                         <Image src={props.img} width={281} height={315} alt={props.alt}/>
+                     </div>
+                 </div>
+             </div>
         </a>
     )
 }
