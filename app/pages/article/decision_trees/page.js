@@ -1,6 +1,8 @@
 import React from 'react';
 import {testimonials} from "@/components/info_panel/decision_trees.js";
 
+// TODO: transfer common things to template and abstract the code
+
 function Testimonial({testimonial}) {
   return (
     <div className='testimonial'>
