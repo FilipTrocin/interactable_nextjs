@@ -1,6 +1,8 @@
 import React from 'react';
 import {testimonials} from "@/components/info_panel/k_nearest_neighbours";
 
+// TODO: transfer common things to template and abstract the code
+
 function Testimonial({testimonial}) {
   return (
     <div className='testimonial'>
@@ -21,9 +23,9 @@ export default function Knn() {
     const technique = "k_nearest_neighbours"
 
     return (
-        <div class="App">
+        <div className="App">
             <div id="infoPanel">
-              <div class="headerDiv">
+              <div className="headerDiv">
                   <h1>Did you know <span>{technique.toUpperCase().replaceAll("_", " ")}</span> is commonly used in:</h1>
               </div>
               <div id="testimonials-box">
@@ -43,7 +45,7 @@ export default function Knn() {
             <br></br>
             <br></br>
             <br></br>
-          </section>
+            </section>
             <div id="main">
                 <iframe width="100%" height="1000" frameBorder="0"
                     src="https://observablehq.com/embed/c2c4aa78b69f979f@427?cell=*">
