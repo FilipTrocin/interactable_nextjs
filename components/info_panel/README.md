@@ -16,7 +16,7 @@ This section describes the files and directories present within the directory
   export const testimonials =
       [
           {
-           icon: "../info_panel/icons/<ICON NAME>.svg",
+           icon: "/icons/<ICON NAME>.svg",
            title: "<TITLE>",
            desc: "<DESCRIPTION>"
           }, 
