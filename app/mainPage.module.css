@@ -4,11 +4,13 @@ ROOT STYLES
 
 .main {
   display: block;
+  min-width: auto;
 }
 
 .logo {
   height: 30vmin;
   pointer-events: none;
+  max-width: 100%;
 }
 
 .app {
