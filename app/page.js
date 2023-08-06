@@ -5,7 +5,7 @@ import Image from 'next/image';
 // import {useEffect} from "react";
 
 // CSS
-import styles from '@/app/page.module.css';
+import styles from '@/app/mainPage.module.css';
 
 // Logos
 import logo from '@/public/images/interactable-logo.svg';
